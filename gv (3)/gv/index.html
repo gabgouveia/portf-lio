@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio 2023</title>
+    <style>
+        @import"https://fonts.googleapis.com/css2?family=Alata&display=swap";
+        :root{
+            --def: #393939;
+            --color1: #E5E5E5;
+            --d: #656565;
+            --bt: #616161;
+            --hov: #4d4d4d;
+
+            --mw: 1100px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Alata, sans-serif;
+            text-decoration: none;
+            color: var(--color1);
+        }
+
+        ::-webkit-scrollbar{
+            width: 0;
+        }
+        body{
+            min-height: 100svh;
+            background: var(--def);
+        }
+
+        /* HEADER  */
+
+        header{
+            width: calc(100% - 30px);
+            margin: 25px auto;
+            position: relative;
+            max-width: var(--mw);
+        }
+
+        
+        .c-h{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 5px;
+        }
+        .logo{
+            font-size: 18px;
+            color: var(--color1);
+        }
+        .pages{
+            margin-left: 20px;
+        }
+
+        /* SECTION ST */
+
+
+        .mtL{
+            margin: 100px auto 40px;
+        }
+        .mtM{
+            margin: 70px auto 40px;
+            
+        }
+        .mtP{
+            margin: 40px auto 40px;
+            
+        }
+        .infos{
+            width: calc(100% - 30px);
+            display: flex;
+            justify-content: space-around;
+            max-width: var(--mw);
+        }
+
+        .intro{
+            width: 50%;
+        }
+
+        .intro-in:nth-child(1){
+            margin: 0!important;
+        }
+        .intro-in{
+            margin: 60px 0;
+        }
+
+        .title{
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        .txt{
+            margin: 30px 0;
+            max-width: 400px;
+        }
+
+        .bt{
+            padding: 7px 20px;
+            color: var(--color1);
+            display: block;
+            background: var(--bt);
+            width: fit-content;
+            border-radius: 2px;
+            font-size: 15px;
+            margin-right: 10px;
+            
+        }
+        .hov{
+            transition: all .3s;
+        }
+        .hov:hover{
+            background: var(--hov);
+        }
+        .ports{
+            padding: 15px 50px;
+            display: block;
+            width: fit-content;
+            background: var(--bt);
+            border-radius: 2px;
+            margin: 10px 10px 10px 0;
+        }
+
+        .pots-out{
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .pessoal{
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .img-out{
+            width: 100px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 2px solid var(--d);
+        }
+        .infs{
+            font-size: 15px;
+            font-weight: 100;
+            color: rgb(165, 165, 165);
+            margin: 5px;
+        }
+        
+        .sociais{
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        .redes-out{
+            display: flex;
+        }
+        .redes{
+            width: 35px;
+            aspect-ratio: 1;
+            display: block;
+            background: var(--bt);
+            border-radius: 2px;
+            margin: 0 5px;
+        }
+        .img-out{
+            background-image: url("./img/img.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .git{
+            background-image: url("./img/git.png");
+            filter: invert(1);  
+
+        }
+        .linkedin{
+            background-image: url("./img/linkedin.png");
+        }
+        .img-rede{
+            width: calc(100% - 10px);
+            aspect-ratio: 1;
+            margin: 5px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media only screen and (max-width: 500px){
+            .infos{
+                flex-direction: column-reverse;
+            }
+            .intro{
+                width: 100%;
+            }
+            .pessoal{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="c-h">
+            <a class="logo nome" href="./index.html">Nome sobrenome</a>
+            <div class="h-pages">
+                <a class="pages" href="./index.html">Home</a>
+                <a class="pages" href="cronograma.html">Cronograma</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="infos mtL">
+        <div class="intro ">
+            <div class="intro-in">
+                <h1 class="title">Olá, bem vindo(a)!</h1>
+                <p class="txt">
+                    Meu nome é <span class="nome"></span>, tenho <span class="idade"></span> e sou estudante do terceiro ano do ensino médio com ensino técnico integrado no SENAI Florianópolis. Estou sempre buscando novas oportunidades para aprender!
+                </p>
+                <a class="bt hov" href="cronograma.html">Cronograma</a>
+            </div>
+            <div class="intro-in">
+                <h1 class="title">Portfólios anteriores</h1>
+                <div class="pots-out">
+                    <a class="ports hov" href="https://docs.google.com/presentation/u/0/d/1azSx3PSOReVdUgXBvB39eZSHW1K2Y6L2En4L1su1zzk/edit" target="_blank">2021</a>
+                    <a class="ports hov" href="https://docs.google.com/presentation/u/0/d/1D0KXTVO3SOyricna02h0OOfSzm9teRlpsUv5h_nX7Dk/edit" target="_blank">2022</a>
+                </div>
+            </div>
+            <div class="intro-in">
+                <h1 class="title">Matérias</h1>
+                <div class="pots-out">
+                    <a class="bt hov" href="mtm.html">Matemática</a>
+                    <a class="bt hov" href="hum.html">Humanas</a>
+                    <a class="bt hov" href="nat.html">Natureza</a>
+                    <a class="bt hov" href="lin.html">Linguagens</a>
+                    <a class="bt hov" href="tec.html">Técnico</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="pessoal">
+            <div class="img-out"></div>
+            <h2 class="infs nome"></h2>
+            <h2 class="infs idade"></h2>
+            <h2 class="sociais">Redes de contato</h2>
+            <div class="redes-out">
+                <a href="https://github.com/gabgouveia"  target="_blank" class="redes hov">
+                    <div class="img-rede git"></div>
+                </a>
+                <a href="https://www.linkedin.com/in/gabriel-gouveia06/" target="_blank" class="redes hov">
+                    <div class="img-rede linkedin"></div>
+                </a>
+                <!-- <a href="#" class="redes hov">
+                    <div class="img-rede instagram"></div>
+                </a> -->
+            </div>
+        </div>
+        
+    </section>
+
+    <script>
+        const nomes = document.querySelectorAll(".nome");
+        const idades = document.querySelectorAll(".idade");
+
+        let nome = "Gabriel Rocha Gouveia";
+        let idade = "17 anos";
+
+        for(let i of nomes){
+            i.innerText = nome;
+            console.log(i)
+        }
+
+        for(let i of idades){
+            i.innerText = idade;
+            console.log(i)
+        }
+
+        // MD -> BW 
+
+    </script>
+</body>
+</html>
+
